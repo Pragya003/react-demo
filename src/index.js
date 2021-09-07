@@ -5,6 +5,6 @@ import App from "./app";
 
 
 
-ReactDOM.render(<App />,document.getElementById("root"));
+ReactDOM.render(<App name = "pragya" roll = "102" />,document.getElementById("root"));
 
 
