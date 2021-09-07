@@ -2,10 +2,14 @@
 import React , { Component } from "react";
 
 class App extends Component {
-    state = {
-        name : "Pragya",
-        roll : "102"
-    };
+    constructor(props) {
+        super(props);
+        this.state = {
+            name : "Pragya",
+            roll :  this.props.roll
+        };
+    }
+    
     render(){
         return  <div>
             <h1>hello, {this.state.name}</h1>
