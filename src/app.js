@@ -33,6 +33,19 @@ class App extends Component {
      changeState(){  
         this.setState({hello:"All!!- Its a great reactjs tutorial."});  
      }  
+
+     componentWillReceiveProps(newProps) {      
+        console.log('Component Will Recieve Props!')  
+     }  
+     shouldComponentUpdate(newProps, newState) {  
+        return true;  
+     }  
+     componentWillUpdate(nextProps, nextState) {  
+        console.log('Component Will UPDATE!');  
+     }  
+     componentDidUpdate(prevProps, prevState) {  
+        console.log('Component Did UPDATE!')  
+     }  
     
 }
 
