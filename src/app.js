@@ -46,6 +46,10 @@ class App extends Component {
      componentDidUpdate(prevProps, prevState) {  
         console.log('Component Did UPDATE!')  
      }  
+
+     componentWillUnmount() {  
+        console.log('Component Will UNMOUNT!')  
+     }  
     
 }
 
